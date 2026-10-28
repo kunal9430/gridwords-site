@@ -24,7 +24,7 @@
   --head:'Sora',system-ui,sans-serif; --body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
+html{scroll-behavior:smooth;scroll-padding-top:0}
 html,body{overflow-x:clip}
 body{background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
@@ -45,6 +45,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .links{display:flex;gap:26px;align-items:center}
 .links a{text-decoration:none;color:var(--muted);font-size:.93rem;font-weight:500;transition:color .2s}
 .links a:hover{color:var(--text)}
+.links a.btn,.links a.btn:hover{color:#fff;font-weight:600}
 @media(max-width:760px){.links a:not(.btn){display:none}}
 
 /* ---------- buttons ---------- */
@@ -56,7 +57,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .btn.ghost{background:transparent;border:1px solid var(--line);box-shadow:none;color:var(--text)}
 .btn.ghost:hover{background:var(--surface);box-shadow:none}
 .btn svg{width:20px;height:20px;flex:none}
-.btn[aria-disabled="true"]{filter:grayscale(.8) brightness(.8);pointer-events:none}
+.btn[aria-disabled="true"]{background:var(--surface2);color:var(--muted)!important;box-shadow:none;pointer-events:none}
 
 /* ---------- hero ---------- */
 .hero{padding:140px 0 80px;overflow:hidden;position:relative}
