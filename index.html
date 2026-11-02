@@ -140,8 +140,9 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 
 /* ---------- personalise ---------- */
 .pers{background:var(--bg2)}
-.icons{display:grid;grid-template-columns:repeat(9,1fr);gap:14px;margin-top:48px;max-width:900px;margin-inline:auto}
-@media(max-width:760px){.icons{grid-template-columns:repeat(3,1fr);max-width:340px}}
+.icons{display:grid;grid-template-columns:repeat(10,1fr);gap:14px;margin-top:48px;max-width:1000px;margin-inline:auto}
+@media(max-width:860px){.icons{grid-template-columns:repeat(5,1fr);max-width:520px}}
+@media(max-width:480px){.icons{grid-template-columns:repeat(3,1fr);max-width:340px}}
 .icons figure{text-align:center}
 .icons img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:22%;box-shadow:0 10px 22px -8px rgba(0,0,0,.7);transition:transform .25s}
 .icons figure:hover img{transform:translateY(-6px) scale(1.05)}
@@ -236,8 +237,8 @@ footer a{text-decoration:none}footer a:hover{color:var(--text)}
       <article class="card">
         <div class="ico g"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg></div>
         <h3>Play Online</h3>
-        <p>Create a room, share the 6-character code and play on different devices. Wins earn Grid Words Coins and a place on the global leaderboard.</p>
-        <div class="chips"><span class="chip">Room codes</span><span class="chip">Friends</span><span class="chip">Leaderboard</span></div>
+        <p>Create a room, share the 6-character code and play on different devices. After every turn, the other player's letter and word light up on your board in their colour, just like the bot's. Wins earn Grid Words Coins and a place on the global leaderboard.</p>
+        <div class="chips"><span class="chip">Room codes</span><span class="chip">Friends</span><span class="chip">Leaderboard</span><span class="chip">Opponent's word highlighted</span></div>
       </article>
     </div>
   </div>
@@ -295,18 +296,19 @@ footer a{text-decoration:none}footer a:hover{color:var(--text)}
 <section class="pers" id="personalise">
   <div class="wrap center reveal">
     <span class="eyebrow">Make it yours</span>
-    <h2>An icon for every festival</h2>
-    <p class="lead">Turn on Seasonal app icon and your launcher icon changes with Diwali, Chhath, Gurunanak Jayanti, Christmas, Republic and Independence Day, Makar Sankranti, Holi, Eid and Ganesh Chaturthi.</p>
+    <h2>Your icon, dressed for the festival</h2>
+    <p class="lead">Turn on Seasonal app icon and the Grid Words logo you know stays put. It just picks up a small festive badge for Diwali, Chhath, Gurunanak Jayanti, Christmas, Republic and Independence Day, Makar Sankranti, Holi, Eid and Ganesh Chaturthi.</p>
     <div class="icons">
-      <figure><img loading="lazy" src="assets/festival/diwali.png" alt="Diwali icon" width="192" height="192"><figcaption>Diwali</figcaption></figure>
-      <figure><img loading="lazy" src="assets/festival/chhath.png" alt="Chhath icon" width="192" height="192"><figcaption>Chhath</figcaption></figure>
-      <figure><img loading="lazy" src="assets/festival/gurunanak.png" alt="Gurunanak Jayanti icon" width="192" height="192"><figcaption>Gurunanak</figcaption></figure>
-      <figure><img loading="lazy" src="assets/festival/christmas.png" alt="Christmas icon" width="192" height="192"><figcaption>Christmas</figcaption></figure>
-      <figure><img loading="lazy" src="assets/festival/tricolour.png" alt="Tricolour icon" width="192" height="192"><figcaption>Tricolour</figcaption></figure>
-      <figure><img loading="lazy" src="assets/festival/kite.png" alt="Kite icon" width="192" height="192"><figcaption>Kite</figcaption></figure>
-      <figure><img loading="lazy" src="assets/festival/holi.png" alt="Holi icon" width="192" height="192"><figcaption>Holi</figcaption></figure>
-      <figure><img loading="lazy" src="assets/festival/eid.png" alt="Eid icon" width="192" height="192"><figcaption>Eid</figcaption></figure>
-      <figure><img loading="lazy" src="assets/festival/ganesh.png" alt="Ganesh Chaturthi icon" width="192" height="192"><figcaption>Ganesh</figcaption></figure>
+      <figure><img loading="lazy" src="assets/festival/default.png" alt="Default Grid Words icon" width="256" height="256"><figcaption>Default</figcaption></figure>
+      <figure><img loading="lazy" src="assets/festival/diwali.png" alt="Diwali icon" width="256" height="256"><figcaption>Diwali</figcaption></figure>
+      <figure><img loading="lazy" src="assets/festival/chhath.png" alt="Chhath icon" width="256" height="256"><figcaption>Chhath</figcaption></figure>
+      <figure><img loading="lazy" src="assets/festival/gurunanak.png" alt="Gurunanak Jayanti icon" width="256" height="256"><figcaption>Gurunanak</figcaption></figure>
+      <figure><img loading="lazy" src="assets/festival/christmas.png" alt="Christmas icon" width="256" height="256"><figcaption>Christmas</figcaption></figure>
+      <figure><img loading="lazy" src="assets/festival/tricolour.png" alt="Tricolour icon" width="256" height="256"><figcaption>Tricolour</figcaption></figure>
+      <figure><img loading="lazy" src="assets/festival/kite.png" alt="Kite icon" width="256" height="256"><figcaption>Kite</figcaption></figure>
+      <figure><img loading="lazy" src="assets/festival/holi.png" alt="Holi icon" width="256" height="256"><figcaption>Holi</figcaption></figure>
+      <figure><img loading="lazy" src="assets/festival/eid.png" alt="Eid icon" width="256" height="256"><figcaption>Eid</figcaption></figure>
+      <figure><img loading="lazy" src="assets/festival/ganesh.png" alt="Ganesh Chaturthi icon" width="256" height="256"><figcaption>Ganesh</figcaption></figure>
     </div>
     <div class="perks">
       <article class="card" style="text-align:left">
